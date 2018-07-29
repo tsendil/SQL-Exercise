@@ -1,0 +1,52 @@
+
+create table offices
+(
+office integer not null,
+city varchar(15) not null,
+region varchar(10) not null,
+mgr int,
+target int,
+sales int
+);
+
+
+create table customers
+(
+cust_num int not null,
+company varchar(20) not null,
+cust_rep int,
+credit_limit int
+);
+
+create table salesreps
+(
+empl_num int not null,
+name varchar(15) not null,
+age int,
+rep_office int,
+title varchar(10),
+hire_date date,
+manager int,
+quota int,
+sales int
+);
+
+create table orders
+(
+order_num int not null,
+order_date date not null,
+cust int not null,
+rep int,
+mfr char(3) not null,
+product char(5) not null,
+qty int not null,
+amount int
+);
+
+
+
+
+
+
+
+
